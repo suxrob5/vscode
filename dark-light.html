@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+
+</head>
+<body>
+    <h1>hello</h1>
+    <p>click button to toggle between dark and for thus</p>
+    <button onclick="myFunction()"><strong>dark mode</strong></button>
+    <a href="http://127.0.0.1:5501/index.html">insex</a>
+</body>
+</html>
+<style>
+    body{
+        padding: 25px;
+        color: black;
+        font-size: 25px;
+    }
+
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+
+    button{
+        cursor: pointer;
+        border: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 6px;
+        
+    }
+</style>
+
+<script>
+    function myFunction(){
+        let element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
